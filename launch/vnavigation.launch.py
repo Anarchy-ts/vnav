@@ -21,7 +21,7 @@ def generate_launch_description():
     #         'map',
     #         'map.yaml'))
 
-    param_file_name = 'vnav_params.yaml'
+    param_file_name = 'smac2dparams.yaml'
     param_dir = LaunchConfiguration(
         'params_file',
         default=os.path.join(
