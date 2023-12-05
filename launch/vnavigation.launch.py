@@ -61,11 +61,11 @@ def generate_launch_description():
                 
         ),
 
-        # Node(
-        #     package='rviz2',
-        #     executable='rviz2',
-        #     name='rviz2',
-        #     arguments=['-d', rviz_config_dir],
-        #     parameters=[{'use_sim_time': use_sim_time}],
-        #     output='screen'),
+        Node(
+            package='topic_tools',
+            executable='relay',
+            name='remap_cmd_vel',
+            output='screen',
+            remappings=[('/cmd_vel','/vnymous/cmd_vel')]
+            ),
     ])
