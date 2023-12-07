@@ -215,15 +215,15 @@ local_costmap:
         observation_sources: zedcam
         zedcam:
           topic: /zed2i/zed_node/points
-          sensor_frame: perpendicular
-          max_obstacle_height: 5.0
-          min_obstacle_height: 0.1
+          # sensor_frame: perpendicular
+          max_obstacle_height: 10.0
+          min_obstacle_height: 0.2
           clearing: True
           marking: True
           data_type: "PointCloud2"
-          raytrace_max_range: 5.0
+          raytrace_max_range: 4.0
           raytrace_min_range: 0.0
-          obstacle_max_range: 4.0
+          obstacle_max_range: 5.0
           obstacle_min_range: 0.0
       
       # static_layer:
@@ -280,17 +280,17 @@ global_costmap:
         observation_sources: zedcam
         zedcam:
           topic: /zed2i/zed_node/points
-          sensor_frame: perpendicular
-          max_obstacle_height: 5.0
-          min_obstacle_height: 0.1
+          # sensor_frame: perpendicular
+          max_obstacle_height: 10.0
+          min_obstacle_height: 0.2
           clearing: True
           marking: True
           data_type: "PointCloud2"
-          raytrace_max_range: 5.0
+          raytrace_max_range: 4.0
           raytrace_min_range: 0.0
-          obstacle_max_range: 4.0
+          obstacle_max_range: 5.0
           obstacle_min_range: 0.0
-      
+
       # static_layer:
       #   plugin: "nav2_costmap_2d::StaticLayer"
       #   map_subscribe_transient_local: True
