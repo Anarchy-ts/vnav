@@ -61,11 +61,12 @@ def generate_launch_description():
                 
         ),
 
-        Node(
-            package='topic_tools',
-            executable='relay',
-            name='remap_cmd_vel',
-            output='screen',
-            remappings=[('/cmd_vel','/vnymous/cmd_vel')]
-            ),
+        # Node(
+        #     package='topic_tools',
+        #     executable='relay',
+        #     name='remap_cmd_vel',
+        #     output='screen',
+           
+        #     remappings=[('/cmd_vel','/vnymous/cmd_vel')]
+        #     ),
     ])
