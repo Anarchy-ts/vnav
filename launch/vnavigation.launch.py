@@ -21,13 +21,15 @@ def generate_launch_description():
     #         'map',
     #         'map.yaml'))
 
-    param_file_name = 'smac2dparams.yaml'
+    smac2d = 'smac2dparams.yaml'
+    smachybrid = 'smachybridAstarparams.yaml'
+    smaclattice = 'smacstatelatticeparams.yaml'
     param_dir = LaunchConfiguration(
         'params_file',
         default=os.path.join(
             get_package_share_directory('vnav'),
             'params',
-            param_file_name))
+            smac2d))
 
     nav2_launch_file_dir = os.path.join(get_package_share_directory('nav2_bringup'), 'launch')
 
